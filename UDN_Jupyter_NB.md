@@ -32,17 +32,6 @@ library(devtools)
 install_github("hms-dbmi/picsuRe", force = TRUE)
 ```
 
-    Downloading GitHub repo hms-dbmi/picsuRe@master
-    from URL https://api.github.com/repos/hms-dbmi/picsuRe/zipball/master
-    Installing picsuRe
-    '/opt/conda/lib/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
-      --quiet CMD INSTALL  \
-      '/tmp/Rtmpnuj8IJ/devtools303c6a353b5d/hms-dbmi-picsuRe-66f21b7'  \
-      --library='/opt/conda/lib/R/library' --install-tests 
-    
-
-
-
 ```R
 #install_git('https://github.com/hms-dbmi/picsuRe')
 library(picsuRe)
@@ -56,10 +45,6 @@ install.packages('pander', repos='http://cran.us.r-project.org')
 library(pander)
 ```
 
-    Updating HTML index of packages in '.Library'
-    Making 'packages.html' ... done
-
-
 # Step 2 - Define your token
 
 To authenticate with PIC-SURE put your token in an text file in your JupyterNotebook's folder. The token will be read from there so the token does not get seen by anyone except you. You can find the token under the user profile (https://udn.hms.harvard.edu/transmart/user).
@@ -68,9 +53,6 @@ To authenticate with PIC-SURE put your token in an text file in your JupyterNote
 ```R
 token <- as.character(read.table("token.txt", sep=",")[1,1])
 ```
-
-    Warning message:
-    In read.table("token.txt", sep = ","): incomplete final line found by readTableHeader on 'token.txt'
 
 # Step 3 - Define your environment
 
