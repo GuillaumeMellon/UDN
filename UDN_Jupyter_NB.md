@@ -99,64 +99,6 @@ Her we use the picsure function, to do it we inform the arguments: environment, 
 system.time(Var_Demographics <- picsure(env, token, Demographics, gabe = TRUE, verbose = TRUE))
 ```
 
-    Hi Guillaume_Mellon thank you for using picsuRe!
-    
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /00_Demographics
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Age at symptom onset in years/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Age at UDN Evaluation (in years)/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Current age in years/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Ethnicity/Hispanic or Latino/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Ethnicity/Not Hispanic or Latino/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Ethnicity/N|A/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Ethnicity/Unknown|Not Reported Ethnicity/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Gender/Female/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Gender/Male/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Gender/Other/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Race/American Indian or Alaska Native/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Race/Asian/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Race/Black or African American/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Race/Native Hawaiian or Other Pacific Islander/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Race/Other/
-    /i2b2-udn/Demo/00_Demographics/00_Demographics/Race/White/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #417
-    
-    Waiting for PIC-SURE to return the query
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 923 observations of 7 variables. Its size is 29.9 Kb
-
-
-
-       user  system elapsed 
-      1.877   0.040  25.696 
-
-
 
 ```R
 str(Var_Demographics)
@@ -454,69 +396,6 @@ pander::pander(race2, split.cell = 100, split.table = Inf,main="Race of patients
 system.time(Var_Primary_symptom <- picsure(env, token, Primary_symptom, gabe = TRUE, verbose = TRUE))
 ```
 
-    Hi Guillaume_Mellon thank you for using picsuRe!
-    
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /01_Primary symptom category reported by patient or caregiver
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Allergies and Disorders of The Immune System/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Cardiology and vascular conditions (heart, artery, vein, and lymph disorders)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Dentistry and craniofacial (bones of head and face)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Dermatology (skin diseases and disorders)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Endocrinology (disorder of the endocrine glands and hormones)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Gastroenterology (disorder of the stomach and intestines)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Gynecology and reproductive medicine/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Hematology (blood diseases and disorders)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Infectious diseases/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Musculoskeletal and orthopedics (structural and functional disorders of muscles, bones, and joints)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Nephrology (kidney diseases and disorders)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Neurology (disorders of the nervous system, including brain and spinal cord)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/N|A/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Oncology (Tumors and cancer)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Ophthalmology (Eye disorders and diseases)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Other/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Psychiatry/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Pulmonology (Lung disorders and diseases)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Rheumatology (immune disorders of the joints, muscles, and ligaments)/
-    /i2b2-udn/Demo/01_Primary symptom category reported by patient or caregiver/01_Primary symptom category reported by patient or caregiver/Urology/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #419
-    
-    Waiting for PIC-SURE to return the query
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 921 observations of 2 variables. Its size is 10.4 Kb
-
-
-
-       user  system elapsed 
-      2.078   0.045  25.571 
-
-
 
 ```R
 str(Var_Primary_symptom)
@@ -805,48 +684,7 @@ summary(Var_Sequence_Submitted)
 system.time(Var_Type_sequencing <- picsure(env, token, Type_sequencing, gabe = TRUE, verbose = TRUE))
 ```
 
-    Hi Guillaume_Mellon thank you for using picsuRe!
     
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /02_Type of sequencing
-    /i2b2-udn/Demo/02_Type of sequencing/02_Type of sequencing/Targeted Variant/
-    /i2b2-udn/Demo/02_Type of sequencing/02_Type of sequencing/Whole Exome/
-    /i2b2-udn/Demo/02_Type of sequencing/02_Type of sequencing/Whole Genome/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #423
-    
-    Waiting for PIC-SURE to return the query
-      ...still waiting
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 624 observations of 2 variables. Its size is 6.2 Kb
-
-
-
-       user  system elapsed 
-      0.571   0.018   7.251 
-
-
-
 ```R
 str(Var_Type_sequencing)
 ```
@@ -1239,254 +1077,7 @@ summary(Var_Maternal_ethnicity)
 ```R
 system.time(Var_Paternal_ethnicity <- picsure(env, token, Paternal_ethnicity, gabe = TRUE, verbose = TRUE))
 ```
-
-    Hi Guillaume_Mellon thank you for using picsuRe!
     
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /06_Paternal ethnicity (from PhenoTips)
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/ Ashkenazi/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/ English/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/ French/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/ German/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/ Hungarian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/ Irish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/ Jewish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/ MX/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/ Scottish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/ Sicilian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/ Spain/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/ Welsh/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Afghanistan/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/African/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/African American/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/African Americans/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Aleutian Indian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Arabs/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Argentina/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Armenian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Ashkenazi Jewish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Ashkenazi Jews/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Asian Indian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Austrian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Austrians/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Bolivian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/British/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Calatayud/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Canary island/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Caucasian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/caucasian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Cherokee/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Chinese/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Columbia/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Croats/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Czech/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Czechoslovakian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Danish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Denmark/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Dutch/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Eastern European/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Ecuador/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Ecuadorian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Egyptian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/El Salvador/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/English/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Ethiopian/
-    
-       !!!There is an issue in the database with the path: "/i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/European/"
-       -> discarding path. Please contact the developpers regarding this issue!!!
-    
-    
-       !!!There is an issue in the database with the path: "/i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/European/"
-       -> discarding path. Please contact the developpers regarding this issue!!!
-    
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/European Americans/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/European Caucasian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Finnish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Flemish/
-    
-       !!!There is an issue in the database with the path: "/i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/French/"
-       -> discarding path. Please contact the developpers regarding this issue!!!
-    
-    
-       !!!There is an issue in the database with the path: "/i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/French/"
-       -> discarding path. Please contact the developpers regarding this issue!!!
-    
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/French Canadian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/German/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/german/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Germans/
-    
-       !!!There is an issue in the database with the path: "/i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Greek/"
-       -> discarding path. Please contact the developpers regarding this issue!!!
-    
-    
-       !!!There is an issue in the database with the path: "/i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Greek/"
-       -> discarding path. Please contact the developpers regarding this issue!!!
-    
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Guatemalan/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Guerrero/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Hispanic/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/hispanic/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Hispanic - Mexico/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Hispanic-Mexico/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Hungarian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Hungarians/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/indian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Indo-Trinidadian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Irani/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Iranian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Iraqi/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Irish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/irish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Italian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Italians/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Italy/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Japanese/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Japenese/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Jewish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Kazakhstani/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Korean/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Lebanese/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Lumbee/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Mexican/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/mexican/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Mexico/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/michoacan/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Mixed European/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Muhajir (Pakistan)/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Native American/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/native american/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Native American - Cherokee/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Nigerian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/No known Ashkenazi Jewish ancestry/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/No known Jewish ancestry/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Non Jewish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Non-Hispanic/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Northern European/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Northern India/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Northern Scottish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Norwegian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Norwegians/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Not Ashkenzi Jewish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Other unknown/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Pakistan/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/pakistan/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Palestinian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Pennsylvania German/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Phillipino/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Polish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Polynesians/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Portuguese/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Possible distant Ashkenazi Jewish ancestry/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Puerto Rican/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Puerto Rico/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Puerto-Rican/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Romanian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Russian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Scandanavian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Scottish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Seminole Native American/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Sephardic Jewish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Serbian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Serbs/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Sicilian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/South African/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/South American (Colombia)/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/South Korean/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Spain/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Spaniards/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Spanish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Sri Lanka/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Swedes/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Swedish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Swiss/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Taiwanese/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Turkish/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Ukrainian/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/UNKNOWN/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/unknown/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Unknown/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Urkraine/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Venezuelan/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Vietnamese/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Welsh/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Welsh|English/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/Western European/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/White/
-    /i2b2-udn/Demo/06_Paternal ethnicity (from PhenoTips)/06_Paternal ethnicity (from PhenoTips)/yemen/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #427
-    
-    Waiting for PIC-SURE to return the query
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 479 observations of 2 variables. Its size is 21.6 Kb
-
-
-
-       user  system elapsed 
-     12.376   0.303 151.171 
-
-
 
 ```R
 str(Var_Paternal_ethnicity)
@@ -1520,51 +1111,7 @@ summary(Var_Paternal_ethnicity)
 system.time(Var_Family_history <- picsure(env, token, Family_history, gabe = TRUE, verbose = TRUE))
 ```
 
-    Hi Guillaume_Mellon thank you for using picsuRe!
     
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /08_Family history (from PhenoTips)
-    /i2b2-udn/Demo/08_Family history (from PhenoTips)/08_Family history (from PhenoTips)/Affected Relatives/false/
-    /i2b2-udn/Demo/08_Family history (from PhenoTips)/08_Family history (from PhenoTips)/Affected Relatives/true/
-    /i2b2-udn/Demo/08_Family history (from PhenoTips)/08_Family history (from PhenoTips)/Consanguinity/false/
-    /i2b2-udn/Demo/08_Family history (from PhenoTips)/08_Family history (from PhenoTips)/Consanguinity/true/
-    /i2b2-udn/Demo/08_Family history (from PhenoTips)/08_Family history (from PhenoTips)/Miscarriages/false/
-    /i2b2-udn/Demo/08_Family history (from PhenoTips)/08_Family history (from PhenoTips)/Miscarriages/true/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #429
-    
-    Waiting for PIC-SURE to return the query
-      ...still waiting
-      ...still waiting
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 519 observations of 4 variables. Its size is 10.7 Kb
-
-
-
-       user  system elapsed 
-      0.907   0.037  11.191 
-
-
 
 ```R
 str(Var_Family_history)
@@ -1598,79 +1145,6 @@ summary(Var_Family_history)
 ```R
 system.time(Var_Prenatal_history <- picsure(env, token, Prenatal_history, gabe = TRUE, verbose = TRUE))
 ```
-
-    Hi Guillaume_Mellon thank you for using picsuRe!
-    
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /09_Prenatal and perinatal history (from PhenoTips)
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Assisted Reproduction Donor Egg/false/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Assisted Reproduction Donor Egg/true/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Assisted Reproduction Donor Sperm/false/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Assisted Reproduction Fertility Meds/false/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Assisted Reproduction Fertility Meds/true/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Assisted Reproduction iui/false/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Assisted Reproduction iui/true/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Assisted Reproduction Surrogacy/false/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Assisted Reproduction Surrogacy/true/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Gestation/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/icsi/false/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/icsi/true/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/ivf/false/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/ivf/true/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Maternal Age/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/multipleGestation/false/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/multipleGestation/true/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Obseteric History/Births/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Obseteric History/Gravida/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Obseteric History/Para/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Obseteric History/Term/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Paternal Age/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Preterm/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Sab/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/Tab/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/twinNumber/A/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/twinNumber/B/
-    /i2b2-udn/Demo/09_Prenatal and perinatal history (from PhenoTips)/09_Prenatal and perinatal history (from PhenoTips)/twinNumber/Other/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #431
-    
-    Waiting for PIC-SURE to return the query
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 770 observations of 20 variables. Its size is 67.6 Kb
-
-
-
-       user  system elapsed 
-      3.074   0.064  35.837 
 
 
 
@@ -1786,49 +1260,7 @@ Candidate_genes_status <-"11_Candidate genes/Status"
 system.time(Var_Candidate_genes_status <- picsure(env, token, Candidate_genes_status, gabe = TRUE, verbose = TRUE))
 ```
 
-    Hi Guillaume_Mellon thank you for using picsuRe!
     
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /11_Candidate genes/Status
-    /i2b2-udn/Demo/11_Candidate genes/11_Candidate genes/Status/candidate/
-    /i2b2-udn/Demo/11_Candidate genes/11_Candidate genes/Status/carrier/
-    /i2b2-udn/Demo/11_Candidate genes/11_Candidate genes/Status/rejected/
-    /i2b2-udn/Demo/11_Candidate genes/11_Candidate genes/Status/solved/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #433
-    
-    Waiting for PIC-SURE to return the query
-      ...still waiting
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 334 observations of 2 variables. Its size is 4.4 Kb
-
-
-
-       user  system elapsed 
-      0.644   0.027   8.181 
-
-
-
 ```R
 str(Var_Candidate_genes_status)
 ```
@@ -1865,47 +1297,6 @@ Candidate_genes_strategy <-"11_Candidate genes/Strategy"
 ```R
 system.time(Var_Candidate_genes_strategy <- picsure(env, token, Candidate_genes_strategy, gabe = TRUE, verbose = TRUE))
 ```
-
-    Hi Guillaume_Mellon thank you for using picsuRe!
-    
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /11_Candidate genes/Strategy
-    /i2b2-udn/Demo/11_Candidate genes/11_Candidate genes/Strategy/common_mutations/
-    /i2b2-udn/Demo/11_Candidate genes/11_Candidate genes/Strategy/deletion/
-    /i2b2-udn/Demo/11_Candidate genes/11_Candidate genes/Strategy/familial_mutation/
-    /i2b2-udn/Demo/11_Candidate genes/11_Candidate genes/Strategy/sequencing/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #435
-    
-    Waiting for PIC-SURE to return the query
-      ...still waiting
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 296 observations of 2 variables. Its size is 4.3 Kb
-
-
-
-       user  system elapsed 
-      0.641   0.029   8.322 
 
 
 
@@ -1990,45 +1381,6 @@ Candidate_variants_interpretation_variant_u_s <-"12_Candidate variants/03 Interp
 system.time(Var_Candidate_variants_interpretation_variant_u_s <- picsure(env, token, Candidate_variants_interpretation_variant_u_s, gabe = TRUE, verbose = TRUE))
 ```
 
-    Hi Guillaume_Mellon thank you for using picsuRe!
-    
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /12_Candidate variants/03 Interpretation/variant_u_s
-    /i2b2-udn/Demo/12_Candidate variants/12_Candidate variants/03 Interpretation/variant_u_s/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #437
-    
-    Waiting for PIC-SURE to return the query
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 164 observations of 2 variables. Its size is 2.8 Kb
-
-
-
-       user  system elapsed 
-      0.339   0.020   4.713 
-
-
-
 ```R
 str(Var_Candidate_variants_interpretation_variant_u_s)
 ```
@@ -2064,44 +1416,6 @@ Candidate_variants_interpretation_pathogenic <-"12_Candidate variants/03 Interpr
 ```R
 system.time(Var_Candidate_variants_interpretation_pathogenic <- picsure(env, token, Candidate_variants_interpretation_pathogenic, gabe = TRUE, verbose = TRUE))
 ```
-
-    Hi Guillaume_Mellon thank you for using picsuRe!
-    
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /12_Candidate variants/03 Interpretation/pathogenic
-    /i2b2-udn/Demo/12_Candidate variants/12_Candidate variants/03 Interpretation/pathogenic/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #439
-    
-    Waiting for PIC-SURE to return the query
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 76 observations of 2 variables. Its size is 1.7 Kb
-
-
-
-       user  system elapsed 
-      0.352   0.013   4.987 
-
 
 
 ```R
@@ -2140,44 +1454,6 @@ Candidate_variants_interpretation_likely_pathogenic <-"12_Candidate variants/03 
 system.time(Var_Candidate_variants_interpretation_likely_pathogenic <- picsure(env, token, Candidate_variants_interpretation_likely_pathogenic, gabe = TRUE, verbose = TRUE))
 ```
 
-    Hi Guillaume_Mellon thank you for using picsuRe!
-    
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /12_Candidate variants/03 Interpretation/likely_pathogenic
-    /i2b2-udn/Demo/12_Candidate variants/12_Candidate variants/03 Interpretation/likely_pathogenic/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #441
-    
-    Waiting for PIC-SURE to return the query
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 33 observations of 2 variables. Its size is 1.2 Kb
-
-
-
-       user  system elapsed 
-      0.327   0.014   4.447 
-
-
 
 ```R
 str(Var_Candidate_variants_interpretation_likely_pathogenic)
@@ -2214,43 +1490,6 @@ Candidate_variants_interpretation_likely_benign <-"12_Candidate variants/03 Inte
 ```R
 system.time(Var_Candidate_variants_interpretation_likely_benign <- picsure(env, token, Candidate_variants_interpretation_likely_benign, gabe = TRUE, verbose = TRUE))
 ```
-
-    Hi Guillaume_Mellon thank you for using picsuRe!
-    
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /12_Candidate variants/03 Interpretation/likely_benign
-    /i2b2-udn/Demo/12_Candidate variants/12_Candidate variants/03 Interpretation/likely_benign/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #443
-    
-    Waiting for PIC-SURE to return the query
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 2 observations of 2 variables. Its size is 0.9 Kb
-
-
-
-       user  system elapsed 
-      0.375   0.015   5.056 
 
 
 
@@ -2290,45 +1529,6 @@ Candidate_variants_interpretation_benign <-"12_Candidate variants/03 Interpretat
 system.time(Var_Candidate_variants_interpretation_benign <- picsure(env, token, Candidate_variants_interpretation_benign, gabe = TRUE, verbose = TRUE))
 ```
 
-    Hi Guillaume_Mellon thank you for using picsuRe!
-    
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /12_Candidate variants/03 Interpretation/benign
-    /i2b2-udn/Demo/12_Candidate variants/12_Candidate variants/03 Interpretation/benign/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #445
-    
-    Waiting for PIC-SURE to return the query
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 1 observations of 2 variables. Its size is 0.8 Kb
-
-
-
-       user  system elapsed 
-      0.322   0.018   4.384 
-
-
-
 ```R
 str(Var_Candidate_variants_interpretation_benign)
 ```
@@ -2365,45 +1565,7 @@ Candidate_variants_interpretation_NA <-"12_Candidate variants/03 Interpretation/
 system.time(Var_Candidate_variants_interpretation_NA <- picsure(env, token, Candidate_variants_interpretation_NA, gabe = TRUE, verbose = TRUE))
 ```
 
-    Hi Guillaume_Mellon thank you for using picsuRe!
-    
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /12_Candidate variants/03 Interpretation/NA
-    /i2b2-udn/Demo/12_Candidate variants/12_Candidate variants/03 Interpretation/NA/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #447
-    
-    Waiting for PIC-SURE to return the query
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 36 observations of 2 variables. Its size is 1.5 Kb
-
-
-
-       user  system elapsed 
-      0.325   0.019   4.442 
-
-
-
+ 
 ```R
 str(Var_Candidate_variants_interpretation_NA)
 ```
@@ -2435,47 +1597,7 @@ summary(Var_Candidate_variants_interpretation_NA)
 system.time(Var_Status <- picsure(env, token, Status, gabe = TRUE, verbose = TRUE))
 ```
 
-    Hi Guillaume_Mellon thank you for using picsuRe!
-    
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /13_Status
-    /i2b2-udn/Demo/13_Status/13_Status/solved/
-    /i2b2-udn/Demo/13_Status/13_Status/unsolved/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #449
-    
-    Waiting for PIC-SURE to return the query
-      ...still waiting
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 806 observations of 2 variables. Its size is 7.5 Kb
-
-
-
-       user  system elapsed 
-      0.499   0.017   6.280 
-
-
-
+ 
 ```R
 str(Var_Status)
 ```
@@ -2506,162 +1628,6 @@ summary(Var_Status)
 ```R
 system.time(Var_Diagnostic <- picsure(env, token, Diagnostic, gabe = TRUE, verbose = TRUE))
 ```
-
-    Hi Guillaume_Mellon thank you for using picsuRe!
-    
-    Retrieving the selected pathways:
-      Using the "find" function of PICSURE
-    
-    Retrieving all variables associated with: /14_Disorders (in OMIM, from PhenoTips)
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/46,XX SEX REVERSAL 4/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/5,10-METHENYLTETRAHYDROFOLATE SYNTHETASE/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/ACHONDROGENESIS, TYPE IA/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/ADRENOLEUKODYSTROPHY/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/ALAGILLE SYNDROME 1/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/ALEXANDER DISEASE/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/ALZHEIMER DISEASE 3/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/ANGIOLIPOMATOSIS, FAMILIAL/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/ARTHROGRYPOSIS, DISTAL, WITH IMPAIRED PROPRIOCEPTION AND TOUCH/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/ATTENTION DEFICIT-HYPERACTIVITY DISORDER/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/AU-KLINE SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/BAINBRIDGE-ROPERS SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/BROWN-VIALETTO-VAN LAERE SYNDROME 1/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/CHARCOT-MARIE-TOOTH DISEASE, AXONAL, TYPE 2S/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/CILIARY DYSKINESIA, PRIMARY, 7/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/CINCA SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/COFFIN-LOWRY SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/COFFIN-SIRIS SYNDROME 1/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/COMBINED OXIDATIVE PHOSPHORYLATION DEFICIENCY 20/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/COMBINED OXIDATIVE PHOSPHORYLATION DEFICIENCY 31/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/CONGENITAL DISORDER OF GLYCOSYLATION, TYPE IIj/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/CONGENITAL DISORDER OF GLYCOSYLATION, TYPE IIm/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ik/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/CONGENITAL HEART DEFECTS, DYSMORPHIC FACIAL FEATURES, AND INTELLECTUAL DEVELOPMENTAL DISORDER/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/CORNELIA DE LANGE SYNDROME 5/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/CYSTIC ANGIOMATOSIS OF BONE, DIFFUSE/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/DEAFNESS-INFERTILITY SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/DYSTONIA 28, CHILDHOOD-ONSET/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/DYSTONIA, DOPA-RESPONSIVE/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/EHLERS-DANLOS SYNDROME, HYPERMOBILITY TYPE/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/EPILEPSY, FOCAL, WITH SPEECH DISORDER AND WITH OR WITHOUT MENTAL RETARDATION/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 17/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 33/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 36/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 4/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 44/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 50/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/FANCONI ANEMIA, COMPLEMENTATION GROUP R/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/FLOATING-HARBOR SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/FRONTOTEMPORAL DEMENTIA AND|OR AMYOTROPHIC LATERAL SCLEROSIS 1/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/GENERALIZED EPILEPSY WITH FEBRILE SEIZURES PLUS, TYPE 2/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/HELSMOORTEL-VAN DER AA SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/HYALINE FIBROMATOSIS SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/HYPOTONIA, INFANTILE, WITH PSYCHOMOTOR RETARDATION AND CHARACTERISTIC FACIES 2/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/HYPOTONIA, INFANTILE, WITH PSYCHOMOTOR RETARDATION AND CHARACTERISTIC FACIES 3/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/LETHAL CONGENITAL CONTRACTURE SYNDROME 7/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/LEUKODYSTROPHY, HYPOMYELINATING, 6/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/MANDIBULOFACIAL DYSOSTOSIS, GUION-ALMEIDA TYPE/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/MARFAN SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/MEGALENCEPHALIC LEUKOENCEPHALOPATHY WITH SUBCORTICAL CYSTS 2B, REMITTING, WITH OR WITHOUT MENTAL RETARDATION/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/MENTAL RETARDATION, AUTOSOMAL DOMINANT 13/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/MENTAL RETARDATION, AUTOSOMAL DOMINANT 5/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/MENTAL RETARDATION, X-LINKED 102/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/METABOLIC ENCEPHALOMYOPATHIC CRISES, RECURRENT, WITH RHABDOMYOLYSIS, CARDIAC ARRHYTHMIAS, AND NEURODEGENERATION/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/MITOCHONDRIAL DNA DEPLETION SYNDROME 6 (HEPATOCEREBRAL TYPE)/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/MUCOPOLYSACCHARIDOSIS, TYPE IIIB/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/MUCOPOLYSACCHARIDOSIS, TYPE IIIC/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/MUSCULAR DYSTROPHY-DYSTROGLYCANOPATHY (LIMB-GIRDLE), TYPE C, 5/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/MYOPATHY, MYOFIBRILLAR, 1/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/MYOPATHY, MYOFIBRILLAR, 8/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/NEURODEGENERATION WITH BRAIN IRON ACCUMULATION 2A/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/NEURODEGENERATION WITH BRAIN IRON ACCUMULATION 3/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/NEURODEVELOPMENTAL DISORDER WITH EPILEPSY, CATARACTS, FEEDING DIFFICULTIES, AND DELAYED BRAIN MYELINATION/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, SEIZURES, AND ABSENT LANGUAGE/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/NEURODEVELOPMENTAL DISORDER WITH OR WITHOUT ANOMALIES OF THE BRAIN, EYE, OR HEART/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/NEUTROPHILIC DERMATOSIS, ACUTE FEBRILE/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/PARAGANGLIOMAS 1/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/PONTOCEREBELLAR HYPOPLASIA, TYPE 2D/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/PONTOCEREBELLAR HYPOPLASIA, TYPE 6/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/PSEUDOHYPOPARATHYROIDISM, TYPE IB/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/PSEUDOPSEUDOHYPOPARATHYROIDISM/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/RETT SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/RETT SYNDROME, CONGENITAL VARIANT/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SCHAAF-YANG SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SENIOR-LOKEN SYNDROME 3/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SENIOR-LOKEN SYNDROME 5/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SHASHI-PENA SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SHWACHMAN-DIAMOND SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SJOGREN SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SPASTIC PARAPLEGIA 11, AUTOSOMAL RECESSIVE/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SPASTIC PARAPLEGIA 7, AUTOSOMAL RECESSIVE/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SPINAL MUSCULAR ATROPHY, LOWER EXTREMITY-PREDOMINANT, 1, AUTOSOMAL DOMINANT/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SPINOCEREBELLAR ATAXIA 28/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SPINOCEREBELLAR ATAXIA, AUTOSOMAL RECESSIVE 24/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SPINOCEREBELLAR ATAXIA, AUTOSOMAL RECESSIVE 8/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/STORMORKEN SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/SYSTEMIC LUPUS ERYTHEMATOSUS/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/TRICHORHINOPHALANGEAL SYNDROME, TYPE I/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/VAN MALDERGEM SYNDROME 2/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/WIEACKER-WOLFF SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/WIEDEMANN-STEINER SYNDROME/
-    /i2b2-udn/Demo/14_Disorders (in OMIM, from PhenoTips)/14_Disorders (in OMIM, from PhenoTips)/WILLIAMS-BEUREN SYNDROME/
-    
-    Building the "where" part of the query
-      default subset = "ALL"
-      -> will look for all the patients that have a value for at list one of the variable selected
-    
-    Building the "select" part of the query
-    
-    Combining the "select" and "where" part of the query to build the json body
-    Exporting the json query to /home/jovyan/work/Guillaume
-    
-    Getting a result ID
-      -> Query #451
-    
-    Waiting for PIC-SURE to return the query
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      ...still waiting
-      Result available \o/
-    
-    Downloading the data frame
-    
-    Making the dataframe pretty
-      ordering the columns according to the order of the variables you selected
-      combining the categorical variables
-      making the columns' name pretty
-    
-    The data.frame downloaded contains 96 observations of 2 variables. Its size is 10.8 Kb
-
-
-
-       user  system elapsed 
-      8.147   0.181  96.903 
-
 
 
 ```R
