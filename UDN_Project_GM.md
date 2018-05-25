@@ -362,25 +362,25 @@ system.time(Var_Diagnostic <- picsure(env, token, Diagnostic, gabe = TRUE, verbo
 Tab_009<-(merge(Tab_008,Var_Diagnostic,all = TRUE))
 ```
 
- Clinical symptoms and physical findings
+# Clinical symptoms and physical findings
 
 
 ```R
-#system.time(Var_Phenotype <- picsure(env, token, Phenotype, gabe = TRUE, verbose = TRUE))
+system.time(Var_Phenotype <- picsure(env, token, Phenotype, gabe = TRUE, verbose = TRUE))
 ```
 
 # Medications
 
 
 ```R
-#system.time(Var_Medications <- picsure(env, token, Medications, gabe = TRUE, verbose = TRUE))
+system.time(Var_Medications <- picsure(env, token, Medications, gabe = TRUE, verbose = TRUE))
 ```
 
 # Metabolite
 
 
 ```R
-#system.time(Var_Metabolites <- picsure(env, token, Metabolites, gabe = TRUE, verbose = TRUE))
+system.time(Var_Metabolites <- picsure(env, token, Metabolites, gabe = TRUE, verbose = TRUE))
 ```
 
 # Step 6 - Analyse your data
@@ -406,10 +406,10 @@ CreateTableOne(data = Tab_009)
          UnknownNot Reported Ethnicity                                                                                      118 (11.2)  
       Race (%)                                                                                                                          
          American Indian or Alaska Native                                                                                     2 ( 0.2)  
-         American Indian or Alaska NativeAsian                                                                                1 ( 0.1)  
-         American Indian or Alaska NativeAsianBlack or African AmericanNative Hawaiian or Other Pacific Islander              1 ( 0.1)  
-         American Indian or Alaska NativeNative Hawaiian or Other Pacific IslanderWhite                                       1 ( 0.1)  
-         American Indian or Alaska NativeOther                                                                                1 ( 0.1)  
+         American Indian or Alaska Native Asian                                                                                1 ( 0.1)  
+         American Indian or Alaska Native Asian Black or African AmericanNative Hawaiian or Other Pacific Islander              1 ( 0.1)  
+         American Indian or Alaska Native Native Hawaiian or Other Pacific IslanderWhite                                       1 ( 0.1)  
+         American Indian or Alaska Native Other                                                                                1 ( 0.1)  
          American Indian or Alaska NativeWhite                                                                                9 ( 0.9)  
          Asian                                                                                                               59 ( 5.7)  
          AsianBlack or African American                                                                                       1 ( 0.1)  
@@ -884,7 +884,6 @@ CreateTableOne(data = Tab_009)
 names(Tab_009)
 ```
 
-
 <ol class=list-inline>
 	<li>'patient_id'</li>
 	<li>'Gender'</li>
@@ -905,14 +904,11 @@ names(Tab_009)
 
 
 
-
 ```R
 class(Tab_009)
 ```
 
-
 'data.frame'
-
 
 
 ```R
