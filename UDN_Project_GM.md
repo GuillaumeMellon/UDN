@@ -5,7 +5,7 @@
 
 Identifying the exact diagnosis of atypical clinical presentation is sometimes a medical challenge. Such clinical presentation can be simply the fact of common disease with atypical presentations or several diseases with overlapping symptoms. However, these presentations can also lead to undiagnosed disease. Diagnostic wavering is often the cause of a misdiagnosis causing suffering of the patient and behavior often inappropriate of those around him. Thus, more than half of the patients report a degraded quality of life associating physical or psychological prejudices.
 
-A network of rare disease professionals was therefore needed. That's why, the Undiagnosed Disease Network (UDN) had been set up in 2012 to bring together a network of expert centers specializing in complex diagnostics.
+A network of rare disease professionals was therefore needed. That's why, the Undiagnosed Disease Network (UDN) had been set up in 2015 to bring together a network of expert centers specializing in complex diagnostics.
 
 # Step 1 - Install packages
 
