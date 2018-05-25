@@ -13,12 +13,12 @@ PicsuRe is provided through GitHub. In order to install it, devtools package - a
 
 
 ```R
-#install.packages("devtools", repos = "http://cran.r-project.org")
+install.packages("devtools", repos = "http://cran.r-project.org")
 ```
 
 
 ```R
-#install.packages("readr", repos = "http://cran.r-project.org")
+install.packages("readr", repos = "http://cran.r-project.org")
 ```
 
 
@@ -31,17 +31,6 @@ library(devtools)
 ```R
 install_github("hms-dbmi/picsuRe", force = TRUE)
 ```
-
-    Downloading GitHub repo hms-dbmi/picsuRe@master
-    from URL https://api.github.com/repos/hms-dbmi/picsuRe/zipball/master
-    Installing picsuRe
-    '/opt/conda/lib/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
-      --quiet CMD INSTALL  \
-      '/tmp/RtmpcpyrZD/devtools3b7e4bcce66d/hms-dbmi-picsuRe-cfdda08'  \
-      --library='/opt/conda/lib/R/library' --install-tests 
-    
-
-
 
 ```R
 #install_git('https://github.com/hms-dbmi/picsuRe')
