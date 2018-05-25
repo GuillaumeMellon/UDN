@@ -396,7 +396,7 @@ Tab_009<-(merge(Tab_008,Var_Diagnostic,all = TRUE))
 
 # Step 6 - Analyse your data
 
-c
+Here with the "Tableone" package, we summarize the dataset using.
 
 
 ```R
@@ -950,33 +950,27 @@ if( nchar("Tab_009$Race") > 20 ){
   Tab_009$Race <- substr(Tab_009$Race, 1, 20)
 }
 ```
-
+Here, we create a vector of variables to summarize
 
 ```R
-## Vector of variables to summarize
 myVars <- c("Gender", "Ethnicity", 
 "Primary_symptom", "x02_Sequence_Submitted", "x02_Type_of_sequencing", 
 "x03_UDN_Clinical_Site", 
 "Affected_Relatives", "Consanguinity", "Miscarriages", "x13_Status")
 ```
-
+Vector of categorical variables that need transformation
 
 ```R
-## Vector of categorical variables that need transformation
 catVars <- c("Gender", "Ethnicity","x02_Sequence_Submitted","x13_Status","Affected_Relatives","Consanguinity","Miscarriages")
 ```
 
-
 ```R
-## Create a TableOne object
 tab2 <- CreateTableOne(vars = myVars, data = Tab_009, factorVars = catVars)
 ```
-
 
 ```R
 tab2
 ```
-
 
                                        
                                         Overall     
@@ -1040,11 +1034,11 @@ tab2
       x13_Status = unsolved (%)          896 (87.7) 
 
 
+Her we grouping by exposure categories (1) Status and then (2) Gender
 
 ```R
 tab3 <- CreateTableOne(vars = myVars, strata = "x13_Status" , data = Tab_009, factorVars = catVars)
 ```
-
 
 ```R
 tab3
@@ -1118,11 +1112,9 @@ tab3
 tab4 <- CreateTableOne(vars = myVars, strata = "Gender" , data = Tab_009, factorVars = catVars)
 ```
 
-
 ```R
 tab4
 ```
-
 
                                        Stratified by Gender
                                         Female       Male         Other      p     
@@ -1186,67 +1178,7 @@ tab4
       x13_Status = unsolved (%)         454 ( 86.8)  441 ( 88.6)  1 (100.0)   0.650
                                        Stratified by Gender
                                         test
-      n                                     
-      Gender (%)                            
-         Female                             
-         Male                               
-         Other                              
-      Ethnicity (%)                         
-                                            
-         Hispanic or Latino                 
-         Not Hispanic or Latino             
-         UnknownNot Reported Ethnicity      
-      Primary_symptom (%)                   
-                                            
-         Allergies and Disord               
-         Cardiology and vascu               
-         Dentistry and cranio               
-         Dermatology (skin di               
-         Endocrinology (disor               
-         Gastroenterology (di               
-         Gynecology and repro               
-         Hematology (blood di               
-         Infectious diseases                
-         Musculoskeletal and                
-         Nephrology (kidney d               
-         Neurology (disorders               
-         Oncology (Tumors and               
-         Ophthalmology (Eye d               
-         Other                              
-         Psychiatry                         
-         Pulmonology (Lung di               
-         Rheumatology (immune               
-         Urology                            
-      x02_Sequence_Submitted = true (%)     
-      x02_Type_of_sequencing (%)            
-         Targeted Variant                   
-         Transcriptome                      
-         Whole Exome                        
-         Whole Genome                       
-      x03_UDN_Clinical_Site (%)             
-         baylor                             
-         duke                               
-         harvard-affiliate                  
-         nih                                
-         stanford                           
-         ucla                               
-         vanderbilt                         
-      Affected_Relatives (%)                
-                                            
-         false                              
-         true                               
-      Consanguinity (%)                     
-                                            
-         false                              
-         true                               
-      Miscarriages (%)                      
-                                            
-         false                              
-         true                               
-      x13_Status = unsolved (%)             
-
-
-
+ 
 ```R
 
 ```
