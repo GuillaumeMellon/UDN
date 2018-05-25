@@ -196,7 +196,7 @@ system.time(Var_Clinical_Site <- picsure(env, token, Clinical_Site, gabe = TRUE,
 Tab_005<-(merge(Tab_004,Var_Clinical_Site,all = TRUE))
 ```
 
- Maternal Ethnicity
+# Maternal Ethnicity
 
 
 ```R
@@ -207,7 +207,7 @@ system.time(Var_Maternal_ethnicity <- picsure(env, token, Maternal_ethnicity, ga
 Tab_<-(merge(Tab_,Var_Maternal_ethnicity,all = TRUE))
 ```
 
- Paternal Ethnicity
+# Paternal Ethnicity
 
 
 ```R
@@ -218,7 +218,7 @@ system.time(Var_Paternal_ethnicity <- picsure(env, token, Paternal_ethnicity, ga
 Tab_006<-(merge(Tab_005,Var_Paternal_ethnicity,all = TRUE))
 ```
 
- Family History
+# Family History
 
 
 ```R
@@ -229,7 +229,7 @@ system.time(Var_Family_history <- picsure(env, token, Family_history, gabe = TRU
 Tab_007<-(merge(Tab_006,Var_Family_history,all = TRUE))
 ```
 
- Prenatal and perinatal history
+# Prenatal and perinatal history
 
 
 ```R
@@ -240,7 +240,7 @@ system.time(Var_Prenatal_history <- picsure(env, token, Prenatal_history, gabe =
 Tab_<-(merge(Tab_,Var_Prenatal_history,all = TRUE))
 ```
 
- Candidate genes
+# Candidate genes
 
 ```R
 system.time(Var_Candidate_genes <- picsure(env, token, Candidate_genes, gabe = TRUE, verbose = TRUE))
@@ -266,7 +266,7 @@ Candidate_genes_strategy <-"11_Candidate genes/Strategy"
 system.time(Var_Candidate_genes_strategy <- picsure(env, token, Candidate_genes_strategy, gabe = TRUE, verbose = TRUE))
 ```
 
- Candidate variants
+# Candidate variants
 
 
 ```R
@@ -298,7 +298,6 @@ system.time(Var_Candidate_variants_interpretation_variant_u_s <- picsure(env, to
 ```R
 Candidate_variants_interpretation_pathogenic <-"12_Candidate variants/03 Interpretation/pathogenic"
 ```
-
 
 ```R
 system.time(Var_Candidate_variants_interpretation_pathogenic <- picsure(env, token, Candidate_variants_interpretation_pathogenic, gabe = TRUE, verbose = TRUE))
@@ -352,7 +351,7 @@ Candidate_variants_interpretation_NA <-"12_Candidate variants/03 Interpretation/
 system.time(Var_Candidate_variants_interpretation_NA <- picsure(env, token, Candidate_variants_interpretation_NA, gabe = TRUE, verbose = TRUE))
 ```
 
- Status
+# Status
 
 
 ```R
@@ -363,7 +362,7 @@ system.time(Var_Status <- picsure(env, token, Status, gabe = TRUE, verbose = TRU
 Tab_008<-(merge(Tab_007,Var_Status,all = TRUE))
 ```
 
- Diagnostic
+# Diagnostic
 
 
 ```R
@@ -381,21 +380,21 @@ Tab_009<-(merge(Tab_008,Var_Diagnostic,all = TRUE))
 #system.time(Var_Phenotype <- picsure(env, token, Phenotype, gabe = TRUE, verbose = TRUE))
 ```
 
- Medications
+# Medications
 
 
 ```R
 #system.time(Var_Medications <- picsure(env, token, Medications, gabe = TRUE, verbose = TRUE))
 ```
 
- Metabolite
+# Metabolite
 
 
 ```R
 #system.time(Var_Metabolites <- picsure(env, token, Metabolites, gabe = TRUE, verbose = TRUE))
 ```
 
- Step 6 - Analyse your data
+# Step 6 - Analyse your data
 
 c
 
