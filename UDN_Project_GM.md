@@ -393,21 +393,23 @@ CreateTableOne(data = Tab_009)
 ```
                                                                                                                         
                                                                                                                          Overall        
-      n                                                                                                                    1055         
+      n                                                                                                                    1055       
+      
       patient_id (mean (sd))                                                                                             528.00 (304.70)
       
-      Gender (%)                                                                                                                        
+      Gender (%)
+      
          Female                                                                                                             539 (51.1)  
          Male                                                                                                               515 (48.8)  
          Other                                                                                                                1 ( 0.1)  
 	 
-      Ethnicity (%)                                                                                                                     
+      Ethnicity (%)                                                                                                              
                                                                                                                               4 ( 0.4)  
          Hispanic or Latino                                                                                                 157 (14.9)  
          Not Hispanic or Latino                                                                                             776 (73.6)  
          UnknownNot Reported Ethnicity                                                                                      118 (11.2)  
 	 
-      Race (%)                                                                                                                          
+      Race (%)                                                                                                                      
          American Indian or Alaska Native                                                                                     2 ( 0.2)  
          American Indian or Alaska Native Asian                                                                                1 ( 0.1)  
          American Indian or Alaska Native Asian Black or African AmericanNative Hawaiian or Other Pacific Islander              1 ( 0.1)  
@@ -431,7 +433,7 @@ CreateTableOne(data = Tab_009)
          OtherWhite                                                                                                           6 ( 0.6)  
          White                                                                                                              800 (77.3)  
 	 
-      x01_Primary_symptom_category_reported_by_patient_or_caregiver (%)                                                                 
+      Primary_symptom_category_reported_by_patient_or_caregiver (%)                                                                 
                                                                                                                              28 ( 2.7)  
          Allergies and Disorders of The Immune System                                                                        53 ( 5.0)  
          Cardiology and vascular conditions (heart, artery, vein, and lymph disorders)                                       48 ( 4.6)  
@@ -484,13 +486,13 @@ CreateTableOne(data = Tab_009)
          Whole Genome                                                                                                       344 (49.6) 
 	 
       x03_UDN_Clinical_Site (%)                                                                                                         
-         baylor                                                                                                             160 (15.2)  
-         duke                                                                                                               144 (13.6)  
-         harvard-affiliate                                                                                                  117 (11.1)  
-         nih                                                                                                                266 (25.2)  
-         stanford                                                                                                           137 (13.0)  
-         ucla                                                                                                               109 (10.3)  
-         vanderbilt                                                                                                         122 (11.6) 
+         Baylor                                                                                                             160 (15.2)  
+         Duke                                                                                                               144 (13.6)  
+         Harvard-affiliate                                                                                                  117 (11.1)  
+         NIH                                                                                                                266 (25.2)  
+         Stanford                                                                                                           137 (13.0)  
+         UCLA                                                                                                               109 (10.3)  
+         Vanderbilt                                                                                                         122 (11.6) 
 	 
       x06_Paternal_ethnicity_.from_PhenoTips. (%)                                                                                       
          Afghanistan                                                                                                          1 ( 0.2)  
@@ -618,7 +620,7 @@ CreateTableOne(data = Tab_009)
          GermanHispanic                                                                                                       1 ( 0.2)  
          GermanHungarian                                                                                                      1 ( 0.2)  
          GermanHungarianNon Jewish                                                                                            1 ( 0.2)  
-         germanIrish                                                                                                          1 ( 0.2)  
+         GermanIrish                                                                                                          1 ( 0.2)  
          Germanirish                                                                                                          1 ( 0.2)  
          GermanIrish                                                                                                          5 ( 0.9)  
          GermanIrishItalianNative American - Cherokee                                                                         1 ( 0.2)  
@@ -767,21 +769,26 @@ CreateTableOne(data = Tab_009)
          Welsh                                                                                                                1 ( 0.2)  
          Western European                                                                                                     4 ( 0.7)  
          White                                                                                                               13 ( 2.3)  
-         yemen                                                                                                                2 ( 0.4)  
+         yemen                                                                                                                2 ( 0.4)
+	 
       Affected_Relatives (%)                                                                                                            
                                                                                                                             124 (20.6)  
          false                                                                                                              374 (62.2)  
-         true                                                                                                               103 (17.1)  
+         true                                                                                                               103 (17.1)
+	 
       Consanguinity (%)                                                                                                                 
                                                                                                                              24 ( 4.0)  
          false                                                                                                              558 (92.8)  
-         true                                                                                                                19 ( 3.2)  
+         true                                                                                                                19 ( 3.2)
+	 
       Miscarriages (%)                                                                                                                  
                                                                                                                              75 (12.5)  
          false                                                                                                              491 (81.7)  
          true                                                                                                                35 ( 5.8)  
 	 
-      x13_Status = unsolved (%)                                                                                             896 (87.7)  
+      x13_Status = unsolved (%)
+      
+      896 (87.7)  
       
       x14_Disorders_.in_OMIM._from_PhenoTips. (%)                                                                                       
          46,XX SEX REVERSAL 4                                                                                                 1 ( 0.9)  
@@ -969,9 +976,12 @@ tab2
 ```
 
                                        
-                                        Overall     
-      n                                 1055        
-      Gender (%)                                    
+                                        Overall
+					
+      n                                 1055
+      
+      Gender (%)
+      
          Female                          539 (51.1) 
          Male                            515 (48.8) 
          Other                             1 ( 0.1) 
@@ -984,42 +994,44 @@ tab2
       
       Primary_symptom (%)                           
                                           28 ( 2.7) 
-         Allergies and Disord             53 ( 5.0) 
-         Cardiology and vascu             48 ( 4.6) 
-         Dentistry and cranio              7 ( 0.7) 
-         Dermatology (skin di             10 ( 0.9) 
-         Endocrinology (disor             27 ( 2.6) 
-         Gastroenterology (di             41 ( 3.9) 
-         Gynecology and repro              2 ( 0.2) 
-         Hematology (blood di             16 ( 1.5) 
+         Allergies/Immune Disorders       53 ( 5.0) 
+         Cardiology                       48 ( 4.6) 
+         Dentistry                        7 ( 0.7) 
+         Dermatology                      10 ( 0.9) 
+         Endocrinology                    27 ( 2.6) 
+         Gastroenterology                 41 ( 3.9) 
+         Gynecology                       2 ( 0.2) 
+         Hematology                       16 ( 1.5) 
          Infectious diseases               2 ( 0.2) 
-         Musculoskeletal and             124 (11.8) 
-         Nephrology (kidney d             17 ( 1.6) 
-         Neurology (disorders            495 (47.0) 
-         Oncology (Tumors and              3 ( 0.3) 
-         Ophthalmology (Eye d             11 ( 1.0) 
+         Musculoskeletal                 124 (11.8) 
+         Nephrology                       17 ( 1.6) 
+         Neurology                       495 (47.0) 
+         Oncology                          3 ( 0.3) 
+         Ophthalmology                    11 ( 1.0) 
          Other                           107 (10.2) 
          Psychiatry                        6 ( 0.6) 
-         Pulmonology (Lung di             20 ( 1.9) 
-         Rheumatology (immune             35 ( 3.3) 
+         Pulmonology                      20 ( 1.9) 
+         Rheumatology                     35 ( 3.3) 
          Urology                           1 ( 0.1) 
       
-      x02_Sequence_Submitted = true (%)  685 (98.7) 
+      Sequence_Submitted = true (%)      685 (98.7) 
       
-      x02_Type_of_sequencing (%)                    
+      Type_of_sequencing (%)
+      
          Targeted Variant                  3 ( 0.4) 
          Transcriptome                     1 ( 0.1) 
          Whole Exome                     346 (49.9) 
          Whole Genome                    344 (49.6) 
       
-      x03_UDN_Clinical_Site (%)                     
-         baylor                          160 (15.2) 
-         duke                            144 (13.6) 
-         harvard-affiliate               117 (11.1) 
-         nih                             266 (25.2) 
-         stanford                        137 (13.0) 
-         ucla                            109 (10.3) 
-         vanderbilt                      122 (11.6) 
+      UDN_Clinical_Site (%)
+	  
+         Baylor                          160 (15.2) 
+         Duke                            144 (13.6) 
+         Harvard-affiliate               117 (11.1) 
+         NIH                             266 (25.2) 
+         Stanford                        137 (13.0) 
+         UCLA                            109 (10.3) 
+         Vanderbilt                      122 (11.6) 
       
       Affected_Relatives (%)                        
                                          124 (20.6) 
@@ -1036,7 +1048,7 @@ tab2
          false                           491 (81.7) 
          true                             35 ( 5.8) 
       
-      x13_Status = unsolved (%)          896 (87.7) 
+      Status = unsolved (%)              896 (87.7) 
 
 
 Her we grouping by exposure categories (1) Status and then (2) Gender
@@ -1050,9 +1062,11 @@ tab3
 ```
 
 
-                                       Stratified by x13_Status
+                                        Stratified by Status
+				       
                                         solved      unsolved     p      test
       n                                 126         896                     
+      
       Gender (%)                                                  0.650     
          Female                          69 (54.8)  454 ( 50.7)             
          Male                            57 (45.2)  441 ( 49.2)             
@@ -1066,42 +1080,44 @@ tab3
       
       Primary_symptom (%)                                         0.121     
                                           1 ( 0.8)   27 (  3.0)             
-         Allergies and Disord             3 ( 2.4)   50 (  5.6)             
-         Cardiology and vascu             5 ( 4.0)   40 (  4.5)             
-         Dentistry and cranio             0 ( 0.0)    6 (  0.7)             
-         Dermatology (skin di             0 ( 0.0)    8 (  0.9)             
-         Endocrinology (disor             5 ( 4.0)   22 (  2.5)             
-         Gastroenterology (di             1 ( 0.8)   36 (  4.0)             
-         Gynecology and repro             0 ( 0.0)    2 (  0.2)             
-         Hematology (blood di             0 ( 0.0)   15 (  1.7)             
+         Allergies/Immune Disorders       3 ( 2.4)   50 (  5.6)             
+         Cardiology                       5 ( 4.0)   40 (  4.5)             
+         Dentistry                        0 ( 0.0)    6 (  0.7)             
+         Dermatology                      0 ( 0.0)    8 (  0.9)             
+         Endocrinology                    5 ( 4.0)   22 (  2.5)             
+         Gastroenterology                 1 ( 0.8)   36 (  4.0)             
+         Gynecology                       0 ( 0.0)    2 (  0.2)             
+         Hematology                       0 ( 0.0)   15 (  1.7)             
          Infectious diseases              0 ( 0.0)    2 (  0.2)             
-         Musculoskeletal and             17 (13.6)  106 ( 11.8)             
-         Nephrology (kidney d             5 ( 4.0)   12 (  1.3)             
-         Neurology (disorders            68 (54.4)  411 ( 45.9)             
-         Oncology (Tumors and             0 ( 0.0)    3 (  0.3)             
-         Ophthalmology (Eye d             0 ( 0.0)   10 (  1.1)             
+         Musculoskeletal                 17 (13.6)  106 ( 11.8)             
+         Nephrology                       5 ( 4.0)   12 (  1.3)             
+         Neurology                       68 (54.4)  411 ( 45.9)             
+         Oncology                         0 ( 0.0)    3 (  0.3)             
+         Ophthalmology                    0 ( 0.0)   10 (  1.1)             
          Other                           16 (12.8)   88 (  9.8)             
          Psychiatry                       0 ( 0.0)    6 (  0.7)             
-         Pulmonology (Lung di             3 ( 2.4)   16 (  1.8)             
-         Rheumatology (immune             1 ( 0.8)   34 (  3.8)             
+         Pulmonology                      3 ( 2.4)   16 (  1.8)             
+         Rheumatology                     1 ( 0.8)   34 (  3.8)             
          Urology                          0 ( 0.0)    1 (  0.1)             
       
-      x02_Sequence_Submitted = true (%) 103 (99.0)  582 ( 98.6)   1.000     
+      Sequence_Submitted = true (%)     103 (99.0)  582 ( 98.6)   1.000     
       
-      x02_Type_of_sequencing (%)                                  0.233     
-         Targeted Variant                 0 ( 0.0)    3 (  0.5)             
+      Type_of_sequencing (%)                                      0.233     
+         
+	 Targeted Variant                 0 ( 0.0)    3 (  0.5)             
          Transcriptome                    0 ( 0.0)    1 (  0.2)             
          Whole Exome                     61 (58.7)  285 ( 48.3)             
          Whole Genome                    43 (41.3)  301 ( 51.0)             
       
-      x03_UDN_Clinical_Site (%)                                  <0.001     
-         baylor                          25 (19.8)  126 ( 14.1)             
-         duke                            21 (16.7)  118 ( 13.2)             
-         harvard-affiliate               10 ( 7.9)   97 ( 10.8)             
-         nih                              1 ( 0.8)  258 ( 28.8)             
-         stanford                        15 (11.9)  122 ( 13.6)             
-         ucla                            29 (23.0)   78 (  8.7)             
-         vanderbilt                      25 (19.8)   97 ( 10.8)             
+      UDN_Clinical_Site (%)                                      <0.001     
+         
+	 Baylor                          25 (19.8)  126 ( 14.1)             
+         Duke                            21 (16.7)  118 ( 13.2)             
+         Harvard-affiliate               10 ( 7.9)   97 ( 10.8)             
+         NIH                              1 ( 0.8)  258 ( 28.8)             
+         Stanford                        15 (11.9)  122 ( 13.6)             
+         UCLA                            29 (23.0)   78 (  8.7)             
+         Vanderbilt                      25 (19.8)   97 ( 10.8)             
       
       Affected_Relatives (%)                                      0.090     
                                          16 (13.6)  108 ( 22.4)             
@@ -1116,7 +1132,8 @@ tab3
                                          10 ( 8.5)   65 ( 13.5)             
          false                          105 (89.0)  386 ( 79.9)             
          true                             3 ( 2.5)   32 (  6.6)             
-      x13_Status = unsolved (%)           0 ( 0.0)  896 (100.0)  <0.001     
+      
+      Status = unsolved (%)               0 ( 0.0)  896 (100.0)  <0.001     
 
 
 
@@ -1129,10 +1146,13 @@ tab4
 ```
 
                                        Stratified by Gender
+				       
                                         Female       Male         Other      p     
       n                                 539          515          1                
+      
       Gender (%)                                                             <0.001
-         Female                         539 (100.0)    0 (  0.0)  0 (  0.0)        
+         
+	 Female                         539 (100.0)    0 (  0.0)  0 (  0.0)        
          Male                             0 (  0.0)  515 (100.0)  0 (  0.0)        
          Other                            0 (  0.0)    0 (  0.0)  1 (100.0)        
       
@@ -1144,42 +1164,44 @@ tab4
       
       Primary_symptom (%)                                                     0.045
                                          13 (  2.4)   14 (  2.7)  1 (100.0)        
-         Allergies and Disord            25 (  4.6)   28 (  5.4)  0 (  0.0)        
-         Cardiology and vascu            24 (  4.5)   24 (  4.7)  0 (  0.0)        
-         Dentistry and cranio             4 (  0.7)    3 (  0.6)  0 (  0.0)        
-         Dermatology (skin di             7 (  1.3)    3 (  0.6)  0 (  0.0)        
-         Endocrinology (disor            15 (  2.8)   12 (  2.3)  0 (  0.0)        
-         Gastroenterology (di            22 (  4.1)   19 (  3.7)  0 (  0.0)        
-         Gynecology and repro             1 (  0.2)    1 (  0.2)  0 (  0.0)        
-         Hematology (blood di             8 (  1.5)    8 (  1.6)  0 (  0.0)        
+         Allergies/Immune Disorders      25 (  4.6)   28 (  5.4)  0 (  0.0)        
+         Cardiology                      24 (  4.5)   24 (  4.7)  0 (  0.0)        
+         Dentistry                        4 (  0.7)    3 (  0.6)  0 (  0.0)        
+         Dermatology                      7 (  1.3)    3 (  0.6)  0 (  0.0)        
+         Endocrinology                   15 (  2.8)   12 (  2.3)  0 (  0.0)        
+         Gastroenterology                22 (  4.1)   19 (  3.7)  0 (  0.0)        
+         Gynecology                       1 (  0.2)    1 (  0.2)  0 (  0.0)        
+         Hematology                       8 (  1.5)    8 (  1.6)  0 (  0.0)        
          Infectious diseases              1 (  0.2)    1 (  0.2)  0 (  0.0)        
-         Musculoskeletal and             64 ( 11.9)   60 ( 11.7)  0 (  0.0)        
-         Nephrology (kidney d             3 (  0.6)   14 (  2.7)  0 (  0.0)        
-         Neurology (disorders           262 ( 48.7)  233 ( 45.3)  0 (  0.0)        
-         Oncology (Tumors and             0 (  0.0)    3 (  0.6)  0 (  0.0)        
-         Ophthalmology (Eye d             5 (  0.9)    6 (  1.2)  0 (  0.0)        
+         Musculoskeletal                 64 ( 11.9)   60 ( 11.7)  0 (  0.0)        
+         Nephrology                       3 (  0.6)   14 (  2.7)  0 (  0.0)        
+         Neurology                      262 ( 48.7)  233 ( 45.3)  0 (  0.0)        
+         Oncology                         0 (  0.0)    3 (  0.6)  0 (  0.0)        
+         Ophthalmology                    5 (  0.9)    6 (  1.2)  0 (  0.0)        
          Other                           52 (  9.7)   55 ( 10.7)  0 (  0.0)        
          Psychiatry                       3 (  0.6)    3 (  0.6)  0 (  0.0)        
-         Pulmonology (Lung di             8 (  1.5)   12 (  2.3)  0 (  0.0)        
-         Rheumatology (immune            21 (  3.9)   14 (  2.7)  0 (  0.0)        
+         Pulmonology                      8 (  1.5)   12 (  2.3)  0 (  0.0)        
+         Rheumatology                    21 (  3.9)   14 (  2.7)  0 (  0.0)        
          Urology                          0 (  0.0)    1 (  0.2)  0 (  0.0)        
       
-      x02_Sequence_Submitted = true (%) 349 ( 98.3)  335 ( 99.1)  1 (100.0)   0.643
+      Sequence_Submitted = true (%)     349 ( 98.3)  335 ( 99.1)  1 (100.0)   0.643
       
-      x02_Type_of_sequencing (%)                                              0.406
-         Targeted Variant                 3 (  0.8)    0 (  0.0)  0 (  0.0)        
+      Type_of_sequencing (%)                                                  0.406
+         
+	 Targeted Variant                 3 (  0.8)    0 (  0.0)  0 (  0.0)        
          Transcriptome                    0 (  0.0)    1 (  0.3)  0 (  0.0)        
          Whole Exome                    184 ( 51.8)  162 ( 47.9)  0 (  0.0)        
          Whole Genome                   168 ( 47.3)  175 ( 51.8)  1 (100.0)        
       
-      x03_UDN_Clinical_Site (%)                                               0.352
-         baylor                          85 ( 15.8)   75 ( 14.6)  0 (  0.0)        
-         duke                            72 ( 13.4)   72 ( 14.0)  0 (  0.0)        
-         harvard-affiliate               57 ( 10.6)   59 ( 11.5)  1 (100.0)        
-         nih                            144 ( 26.7)  122 ( 23.7)  0 (  0.0)        
-         stanford                        73 ( 13.5)   64 ( 12.4)  0 (  0.0)        
-         ucla                            46 (  8.5)   63 ( 12.2)  0 (  0.0)        
-         vanderbilt                      62 ( 11.5)   60 ( 11.7)  0 (  0.0)        
+      UDN_Clinical_Site (%)                                                   0.352
+         
+	 Baylor                          85 ( 15.8)   75 ( 14.6)  0 (  0.0)        
+         Buke                            72 ( 13.4)   72 ( 14.0)  0 (  0.0)        
+         Harvard-affiliate               57 ( 10.6)   59 ( 11.5)  1 (100.0)        
+         NIH                            144 ( 26.7)  122 ( 23.7)  0 (  0.0)        
+         Stanford                        73 ( 13.5)   64 ( 12.4)  0 (  0.0)        
+         UCLA                            46 (  8.5)   63 ( 12.2)  0 (  0.0)        
+         Vanderbilt                      62 ( 11.5)   60 ( 11.7)  0 (  0.0)        
       
       Affected_Relatives (%)                                                  0.785
                                          69 ( 22.1)   55 ( 19.1)  0 (  0.0)        
@@ -1196,9 +1218,8 @@ tab4
          false                          248 ( 79.5)  242 ( 84.0)  1 (100.0)        
          true                            19 (  6.1)   16 (  5.6)  0 (  0.0)        
       
-      x13_Status = unsolved (%)         454 ( 86.8)  441 ( 88.6)  1 (100.0)   0.650
-                                       Stratified by Gender
-                                        test
+      Status = unsolved (%)             454 ( 86.8)  441 ( 88.6)  1 (100.0)   0.650
+                                       
  
 ```R
 
