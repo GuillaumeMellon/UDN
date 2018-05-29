@@ -395,15 +395,18 @@ CreateTableOne(data = Tab_009)
                                                                                                                          Overall        
       n                                                                                                                    1055         
       patient_id (mean (sd))                                                                                             528.00 (304.70)
+      
       Gender (%)                                                                                                                        
          Female                                                                                                             539 (51.1)  
          Male                                                                                                               515 (48.8)  
          Other                                                                                                                1 ( 0.1)  
+	 
       Ethnicity (%)                                                                                                                     
                                                                                                                               4 ( 0.4)  
          Hispanic or Latino                                                                                                 157 (14.9)  
          Not Hispanic or Latino                                                                                             776 (73.6)  
          UnknownNot Reported Ethnicity                                                                                      118 (11.2)  
+	 
       Race (%)                                                                                                                          
          American Indian or Alaska Native                                                                                     2 ( 0.2)  
          American Indian or Alaska Native Asian                                                                                1 ( 0.1)  
@@ -427,6 +430,7 @@ CreateTableOne(data = Tab_009)
          Other                                                                                                               72 ( 7.0)  
          OtherWhite                                                                                                           6 ( 0.6)  
          White                                                                                                              800 (77.3)  
+	 
       x01_Primary_symptom_category_reported_by_patient_or_caregiver (%)                                                                 
                                                                                                                              28 ( 2.7)  
          Allergies and Disorders of The Immune System                                                                        53 ( 5.0)  
@@ -447,7 +451,8 @@ CreateTableOne(data = Tab_009)
          Psychiatry                                                                                                           6 ( 0.6)  
          Pulmonology (Lung disorders and diseases)                                                                           20 ( 1.9)  
          Rheumatology (immune disorders of the joints, muscles, and ligaments)                                               35 ( 3.3)  
-         Urology                                                                                                              1 ( 0.1)  
+         Urology                                                                                                              1 ( 0.1) 
+	 
       Primary_symptom (%)                                                                                                               
                                                                                                                              28 ( 2.7)  
          Allergies and Disord                                                                                                53 ( 5.0)  
@@ -469,12 +474,15 @@ CreateTableOne(data = Tab_009)
          Pulmonology (Lung di                                                                                                20 ( 1.9)  
          Rheumatology (immune                                                                                                35 ( 3.3)  
          Urology                                                                                                              1 ( 0.1)  
+	 
       x02_Sequence_Submitted = true (%)                                                                                     685 (98.7)  
+      
       x02_Type_of_sequencing (%)                                                                                                        
          Targeted Variant                                                                                                     3 ( 0.4)  
          Transcriptome                                                                                                        1 ( 0.1)  
          Whole Exome                                                                                                        346 (49.9)  
-         Whole Genome                                                                                                       344 (49.6)  
+         Whole Genome                                                                                                       344 (49.6) 
+	 
       x03_UDN_Clinical_Site (%)                                                                                                         
          baylor                                                                                                             160 (15.2)  
          duke                                                                                                               144 (13.6)  
@@ -482,7 +490,8 @@ CreateTableOne(data = Tab_009)
          nih                                                                                                                266 (25.2)  
          stanford                                                                                                           137 (13.0)  
          ucla                                                                                                               109 (10.3)  
-         vanderbilt                                                                                                         122 (11.6)  
+         vanderbilt                                                                                                         122 (11.6) 
+	 
       x06_Paternal_ethnicity_.from_PhenoTips. (%)                                                                                       
          Afghanistan                                                                                                          1 ( 0.2)  
          African                                                                                                              1 ( 0.2)  
@@ -771,7 +780,9 @@ CreateTableOne(data = Tab_009)
                                                                                                                              75 (12.5)  
          false                                                                                                              491 (81.7)  
          true                                                                                                                35 ( 5.8)  
+	 
       x13_Status = unsolved (%)                                                                                             896 (87.7)  
+      
       x14_Disorders_.in_OMIM._from_PhenoTips. (%)                                                                                       
          46,XX SEX REVERSAL 4                                                                                                 1 ( 0.9)  
          5,10-METHENYLTETRAHYDROFOLATE SYNTHETASE                                                                             1 ( 0.9)  
@@ -964,11 +975,13 @@ tab2
          Female                          539 (51.1) 
          Male                            515 (48.8) 
          Other                             1 ( 0.1) 
+	 
       Ethnicity (%)                                 
                                            4 ( 0.4) 
          Hispanic or Latino              157 (14.9) 
          Not Hispanic or Latino          776 (73.6) 
          UnknownNot Reported Ethnicity   118 (11.2) 
+      
       Primary_symptom (%)                           
                                           28 ( 2.7) 
          Allergies and Disord             53 ( 5.0) 
@@ -990,12 +1003,15 @@ tab2
          Pulmonology (Lung di             20 ( 1.9) 
          Rheumatology (immune             35 ( 3.3) 
          Urology                           1 ( 0.1) 
+      
       x02_Sequence_Submitted = true (%)  685 (98.7) 
+      
       x02_Type_of_sequencing (%)                    
          Targeted Variant                  3 ( 0.4) 
          Transcriptome                     1 ( 0.1) 
          Whole Exome                     346 (49.9) 
          Whole Genome                    344 (49.6) 
+      
       x03_UDN_Clinical_Site (%)                     
          baylor                          160 (15.2) 
          duke                            144 (13.6) 
@@ -1004,18 +1020,22 @@ tab2
          stanford                        137 (13.0) 
          ucla                            109 (10.3) 
          vanderbilt                      122 (11.6) 
+      
       Affected_Relatives (%)                        
                                          124 (20.6) 
          false                           374 (62.2) 
          true                            103 (17.1) 
+      
       Consanguinity (%)                             
                                           24 ( 4.0) 
          false                           558 (92.8) 
          true                             19 ( 3.2) 
+      
       Miscarriages (%)                              
                                           75 (12.5) 
          false                           491 (81.7) 
          true                             35 ( 5.8) 
+      
       x13_Status = unsolved (%)          896 (87.7) 
 
 
@@ -1037,11 +1057,13 @@ tab3
          Female                          69 (54.8)  454 ( 50.7)             
          Male                            57 (45.2)  441 ( 49.2)             
          Other                            0 ( 0.0)    1 (  0.1)             
+      
       Ethnicity (%)                                               0.105     
                                           0 ( 0.0)    4 (  0.4)             
          Hispanic or Latino              27 (21.4)  122 ( 13.6)             
          Not Hispanic or Latino          84 (66.7)  668 ( 74.6)             
          UnknownNot Reported Ethnicity   15 (11.9)  102 ( 11.4)             
+      
       Primary_symptom (%)                                         0.121     
                                           1 ( 0.8)   27 (  3.0)             
          Allergies and Disord             3 ( 2.4)   50 (  5.6)             
@@ -1063,12 +1085,15 @@ tab3
          Pulmonology (Lung di             3 ( 2.4)   16 (  1.8)             
          Rheumatology (immune             1 ( 0.8)   34 (  3.8)             
          Urology                          0 ( 0.0)    1 (  0.1)             
+      
       x02_Sequence_Submitted = true (%) 103 (99.0)  582 ( 98.6)   1.000     
+      
       x02_Type_of_sequencing (%)                                  0.233     
          Targeted Variant                 0 ( 0.0)    3 (  0.5)             
          Transcriptome                    0 ( 0.0)    1 (  0.2)             
          Whole Exome                     61 (58.7)  285 ( 48.3)             
          Whole Genome                    43 (41.3)  301 ( 51.0)             
+      
       x03_UDN_Clinical_Site (%)                                  <0.001     
          baylor                          25 (19.8)  126 ( 14.1)             
          duke                            21 (16.7)  118 ( 13.2)             
@@ -1077,10 +1102,12 @@ tab3
          stanford                        15 (11.9)  122 ( 13.6)             
          ucla                            29 (23.0)   78 (  8.7)             
          vanderbilt                      25 (19.8)   97 ( 10.8)             
+      
       Affected_Relatives (%)                                      0.090     
                                          16 (13.6)  108 ( 22.4)             
          false                           82 (69.5)  292 ( 60.5)             
          true                            20 (16.9)   83 ( 17.2)             
+      
       Consanguinity (%)                                           0.001     
                                           4 ( 3.4)   20 (  4.1)             
          false                          104 (88.1)  454 ( 94.0)             
@@ -1108,11 +1135,13 @@ tab4
          Female                         539 (100.0)    0 (  0.0)  0 (  0.0)        
          Male                             0 (  0.0)  515 (100.0)  0 (  0.0)        
          Other                            0 (  0.0)    0 (  0.0)  1 (100.0)        
+      
       Ethnicity (%)                                                           0.927
                                           3 (  0.6)    1 (  0.2)  0 (  0.0)        
          Hispanic or Latino              76 ( 14.1)   81 ( 15.7)  0 (  0.0)        
          Not Hispanic or Latino         401 ( 74.4)  374 ( 72.6)  1 (100.0)        
          UnknownNot Reported Ethnicity   59 ( 10.9)   59 ( 11.5)  0 (  0.0)        
+      
       Primary_symptom (%)                                                     0.045
                                          13 (  2.4)   14 (  2.7)  1 (100.0)        
          Allergies and Disord            25 (  4.6)   28 (  5.4)  0 (  0.0)        
@@ -1134,12 +1163,15 @@ tab4
          Pulmonology (Lung di             8 (  1.5)   12 (  2.3)  0 (  0.0)        
          Rheumatology (immune            21 (  3.9)   14 (  2.7)  0 (  0.0)        
          Urology                          0 (  0.0)    1 (  0.2)  0 (  0.0)        
+      
       x02_Sequence_Submitted = true (%) 349 ( 98.3)  335 ( 99.1)  1 (100.0)   0.643
+      
       x02_Type_of_sequencing (%)                                              0.406
          Targeted Variant                 3 (  0.8)    0 (  0.0)  0 (  0.0)        
          Transcriptome                    0 (  0.0)    1 (  0.3)  0 (  0.0)        
          Whole Exome                    184 ( 51.8)  162 ( 47.9)  0 (  0.0)        
          Whole Genome                   168 ( 47.3)  175 ( 51.8)  1 (100.0)        
+      
       x03_UDN_Clinical_Site (%)                                               0.352
          baylor                          85 ( 15.8)   75 ( 14.6)  0 (  0.0)        
          duke                            72 ( 13.4)   72 ( 14.0)  0 (  0.0)        
@@ -1148,18 +1180,22 @@ tab4
          stanford                        73 ( 13.5)   64 ( 12.4)  0 (  0.0)        
          ucla                            46 (  8.5)   63 ( 12.2)  0 (  0.0)        
          vanderbilt                      62 ( 11.5)   60 ( 11.7)  0 (  0.0)        
+      
       Affected_Relatives (%)                                                  0.785
                                          69 ( 22.1)   55 ( 19.1)  0 (  0.0)        
          false                          188 ( 60.3)  185 ( 64.2)  1 (100.0)        
          true                            55 ( 17.6)   48 ( 16.7)  0 (  0.0)        
+      
       Consanguinity (%)                                                       0.891
                                          13 (  4.2)   11 (  3.8)  0 (  0.0)        
          false                          287 ( 92.0)  270 ( 93.8)  1 (100.0)        
          true                            12 (  3.8)    7 (  2.4)  0 (  0.0)        
+      
       Miscarriages (%)                                                        0.626
                                          45 ( 14.4)   30 ( 10.4)  0 (  0.0)        
          false                          248 ( 79.5)  242 ( 84.0)  1 (100.0)        
          true                            19 (  6.1)   16 (  5.6)  0 (  0.0)        
+      
       x13_Status = unsolved (%)         454 ( 86.8)  441 ( 88.6)  1 (100.0)   0.650
                                        Stratified by Gender
                                         test
